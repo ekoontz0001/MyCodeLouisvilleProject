@@ -1,18 +1,49 @@
 
+
+
+
+
+
+
+
+
 p {color:blue;
    display:center;
    align-items:center;
    text-align:center;
    font-size:40px;
+}
+
+body  { Background-color: #E0E0E0; } 
+
+
+
 
 
 }
+
+/* The Sidenav */
+ 
+.sidenav {
+height:100%;
+width:200px;
+position: fixed;
+z-index: 1;
+top: 0;
+left: 0;
+background-color: #111;
+overflow-x: hidden;
+padding-top: 20px;
+}
+
+/* Page Content */
+.main { margin-left: 200px; }
 
 
 
 
 h1{
-    background:white;
+    background:#E0E0E0;   
 
     display: center;
     flex-direction:center;
@@ -20,8 +51,13 @@ h1{
     text-align: center;
 }
 
+
+
+
+
+
 h2 {
-background:white;
+background:#E0E0E0; 
 display: center;
 flex-direction:center;
 align-items: center;
@@ -76,20 +112,10 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box; }
 
-
-    input[type=category],select {
-        background-color: White;
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box; }
-
-     
-/* Style the submit button */
-  input[type=submit]  {
+  
+  
+  
+    input[type=submit]  {
     width: 100%;
     background-color: white;
     color: white;
@@ -100,7 +126,7 @@ input[type=text], select {
     cursor: pointer;
   }
 
-/* Add a background color to the submit button on mouse-over */
+
    input[type=submit],select {
       background-color: #45a049; 
    }
