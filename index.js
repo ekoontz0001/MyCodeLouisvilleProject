@@ -16,3 +16,8 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
+
+/* Hamburger Menu Animation */ 
+function myFunction(x) {
+  x.classList.toggle("change");
+}
