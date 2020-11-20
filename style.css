@@ -42,13 +42,13 @@ body  { Background-color: #E0E0E0; }
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+/*  "next button"  */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -73,7 +73,7 @@ body  { Background-color: #E0E0E0; }
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -109,34 +109,45 @@ body  { Background-color: #E0E0E0; }
 
 
 /* The navigation bar */
-.navbar {
+.topnav {
   overflow: hidden;
   background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
+  position: relative;
 }
 
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
+/* Hide the links/ navigation menu  */
+.topnav #myLinks {
+  display: none;
+}
+
+/*  menu  */
+.topnav a {
+  color: white;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-/* Change background on mouse-over */
-.navbar a:hover {
-  background: #ddd;
+/* Hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
   color: black;
 }
 
-/* Main content */
-.main {
-  margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
+/* Hamburger Menu Bar (Home) */
+.active {
+  background-color: black;
+  color: white;}
 
 
   
@@ -185,13 +196,19 @@ h1{
 
 
 h2{
-background:#E0E0E0; 
-display: center;
-flex-direction:center;
-align-items: center;
-text-align: center;
-font-size: 100px;
-}
+  background:#E0E0E0; 
+  display: center;
+  flex-direction:center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+  }
+
+  .label {
+    font-size: 50px;
+
+
+  }
 
 
 
@@ -203,6 +220,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 50px;
   }
 
   input[type=email], select {
@@ -213,6 +231,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 50px;
   }
 
   input[type=number], select {
@@ -223,6 +242,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-size: 50px;
   }
 
 
@@ -233,7 +253,8 @@ input[type=text], select {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    font-size: 50px; }
 
   
   
@@ -247,6 +268,17 @@ input[type=text], select {
     border-radius: 4px;
     cursor: pointer;
     background-color: #45a049; 
+    font-size: 50px;
+  }
+
+
+  @media screen and (min-width: 768px) {
+    h1 {
+      color:red;
+
+
+
+    }
   }
 
 
