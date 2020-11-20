@@ -116,8 +116,13 @@ body  { Background-color: #E0E0E0; }
 }
 
 /* Hide the links/ navigation menu  */
-.topnav #myLinks {
-  display: none;
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /*  menu  */
@@ -207,7 +212,6 @@ h2{
   .label {
     font-size: 50px;
 
-
   }
 
 
@@ -220,7 +224,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 50px;
+    
   }
 
   input[type=email], select {
@@ -231,7 +235,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 50px;
+    
   }
 
   input[type=number], select {
@@ -242,7 +246,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 50px;
+   
   }
 
 
@@ -254,7 +258,7 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 50px; }
+     }
 
   
   
@@ -268,20 +272,24 @@ input[type=text], select {
     border-radius: 4px;
     cursor: pointer;
     background-color: #45a049; 
-    font-size: 50px;
+    ;
   }
 
 
   @media screen and (min-width: 768px) {
     h1 {
       color:red;
-
-
-
     }
   }
 
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
 
+  
   
 
 
