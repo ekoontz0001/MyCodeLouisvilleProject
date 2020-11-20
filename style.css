@@ -276,7 +276,7 @@ input[type=text], select {
   }
 
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     h1 {
       color:red;
     }
@@ -287,9 +287,10 @@ input[type=text], select {
       float: none;
       width: 100%;
     }
-  }
+  
 
   
+
   
 
 
